@@ -1,0 +1,40 @@
+module.exports = {
+  darkMode: "class",
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        body: ["Epilogue", "sans-serif;"],
+      },
+      colors: {
+        primary: "#1DC071",
+        secondary: "#6F49FD",
+        text1: "#171725",
+        text2: "#4B5264",
+        text3: "#808191",
+        text4: "#B2B3BD",
+        "icon-color": "#A2A2A8",
+        white: "#FFFFFF",
+        whiteSoft: "#FCFBFF",
+        graySoft: "#FCFCFC",
+        grayf3: "#f3f3f3",
+        strock: "#F1F1F3",
+        lite: "#FCFCFD",
+        // lite: "#DFDFDF",
+        error: "#EB5757",
+        dark: "#13131A",
+        darkSecondary: "#1C1C24",
+        softDark: "#22222C",
+        darkSoft: "#24242C",
+        darkStrock: "#3A3A43",
+        darkRed: "#422C32",
+      },
+      boxShadow: {
+        sdprimary: "10px 10px 20px rgba(218, 213, 213, 0.15)",
+        sdsecondary:
+          "4px 4px 8px 0px rgba(226, 226, 226, 0.20), -4px 4px 8px 0px rgba(226, 226, 226, 0.20)",
+      },
+    },
+  },
+  plugins: [],
+};

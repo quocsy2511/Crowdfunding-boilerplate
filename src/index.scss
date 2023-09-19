@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply font-body text-base font-normal mx-auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    max-width: 1440px;
+  }
+  input {
+    @apply outline-none;
+  }
+  input:focus + .error_input {
+    display: none;
+  }
+}
+.quill {
+  @apply border border-strock rounded-xl;
+  border: 1px solid #f1f1f3;
+  border-radius: 10px;
+  padding: 15px 25px;
+  text-align: center;
+
+  .ql-toolbar.ql-snow {
+    @apply bg-text4 bg-opacity-10 rounded-xl py-3 px-5 inline-block;
+    border: none;
+  }
+
+  .ql-container.ql-snow {
+    border: none;
+
+    .ql-editor {
+      @apply font-body text-sm mt-10;
+      min-height: 303px;
+    }
+
+    .ql-editor.ql-blank::before {
+      @apply font-normal text-sm text-text4 not-italic;
+      min-height: 303px;
+    }
+  }
+}
+
+.gradient-banner {
+  background: linear-gradient(180deg, rgba(32, 18, 63, 0) 0%, #000 93.43%);
+}
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
